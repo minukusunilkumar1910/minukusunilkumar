@@ -25,17 +25,7 @@
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
   }
 
-  .card .front-content p {
-    font-size: 32px;
-    font-weight: 700;
-    opacity: 1;
-    background: linear-gradient(-45deg, #a8cfc1 0%, #0fbbff 100%);
-    /* background-clip: text; */
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
-  }
+ 
 
   .card .content {
     position: absolute;
@@ -73,10 +63,7 @@
   .card:hover .front-content {
     transform: translateY(-30%);
   }
-
-  .card:hover .front-content p {
-    opacity: 0;
-  }
+ 
 
 
   .skill h1 {
@@ -87,7 +74,7 @@
   }
 
   .skill h4 {
-    color: #0fbbff;
+    color: #ff0f23;
     font-size: 1.1rem;
   }
 
@@ -119,80 +106,29 @@
   }
 
   .frontend {
-    width: 7rem;
+    width:7rem; 
+    margin: 3rem 0;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
   }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
 
 
 
 }
 
+ 
 
-/* From Uiverse.io by SmartegaAgency */
-.loader {
-  width: 0;
-  height: 4.8px;
-  display: inline-block;
-  position: relative;
-  background: #54f98d;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0);
-  box-sizing: border-box;
-  animation: animFw 3s linear infinite;
-}
-
-.loader::after,
-.loader::before {
-  content: "";
-  width: 10px;
-  height: 1px;
-  background: #ffffff00;
-  position: absolute;
-  top: 9px;
-  right: -2px;
-  opacity: 0;
-  transform: rotate(-45deg) translateX(0px);
-  box-sizing: border-box;
-  animation: coli1 0.5s linear infinite;
-}
-
-.loader::before {
-  top: -4px;
-  transform: rotate(45deg);
-  animation: coli2 1s linear infinite;
-}
-
-@keyframes animFw {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes coli1 {
-  0% {
-    transform: rotate(-45deg) translateX(0px);
-    opacity: 0.7;
-  }
-
-  100% {
-    transform: rotate(-45deg) translateX(-45px);
-    opacity: 0;
-  }
-}
-
-@keyframes coli2 {
-  0% {
-    transform: rotate(45deg) translateX(0px);
-    opacity: 1;
-  }
-
-  100% {
-    transform: rotate(45deg) translateX(-45px);
-    opacity: 0.7;
-  }
-}
 
 
 .pop {
@@ -341,6 +277,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+
 @media (max-height:650px)
 {
   #skillsection {
@@ -363,21 +302,5 @@
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-  }
-}
-.frontend {
-  width:11rem; 
-  margin: 3rem 0;
-  border-radius: 50%;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
   }
 }
