@@ -2,62 +2,46 @@ import './Contact.css';
 import git from './icons/github.png';
 import lin from './icons/linkedin.png';
 import twitter from './icons/twitter.png';
-function Contact()
-{
 
-   let images =[git,lin,twitter];
-   let link=
-   {  
-       hub:"https://github.com/minukusunilkumar1910",
-       lin:"https://www.linkedin.com/in/minukusunilkumar",
-       twitter:"https://x.com/MinukuSunil"
-
+function Contact() {
+   const images = [git, lin, twitter];
+   const links = {
+      hub: "https://github.com/minukusunilkumar1910",
+      lin: "https://www.linkedin.com/in/minukusunilkumar",
+      twitter: "https://x.com/MinukuSunil"
    };
-   
-   console.log(link[0]);
-   console.log(link[1]);
-   console.log(link[2]);
-    function Carding({images})
-    {
 
-
-      return(
+   // Card component to display icon + link
+   function Carding({ image, link }) {
+      return (
          <div className="contactme carding">
-             
-         <a href={link}>  <img className="githubimg" src={images} alt=""/></a>
-       
-      </div>
-      )
-    }
+            <a href={link} target="_blank" rel="noopener noreferrer">
+               <img className="githubimg" src={image} alt="icon" />
+            </a>
+         </div>
+      );
+   }
 
-   return(
+   return (
       <section id="contactsection">
-
-      <div className="contactmainpage">
-
-         <div className="contactmail">
-            <div className="touchdiv">
-               <h1 className='pop'>Get in touch</h1>
-
-            {/* <div className="loader"></div> */}
+         <div className="contactmainpage">
+            <div className="contactmail">
+               <div className="touchdiv">
+                  <h1 className="pop">Get in touch</h1>
+               </div>
+               <div className="mymail">
+                  <a href="mailto:minukusunil425@gmail.com">minukusunil425@gmail.com</a>
+               </div>
             </div>
-            <div className="mymail">
-               <a href="https://mail.google.com/mail">minukusunil425@gmail.com</a>
+
+            <div className="contactpage">
+               <Carding image={images[0]} link={links.hub} />
+               <Carding image={images[1]} link={links.lin} />
+               <Carding image={images[2]} link={links.twitter} />
             </div>
          </div>
-
-
-         <div className="contactpage">
-   
-            <Carding images={images[0]} links={link[0]}/>
-            <Carding images={images[1]} links={link[1]}/>
-            <Carding images={images[2]} links={link[2]}/>
- 
-         </div>
-      </div>
-   </section>
+      </section>
    );
-
 }
 
 export default Contact;
