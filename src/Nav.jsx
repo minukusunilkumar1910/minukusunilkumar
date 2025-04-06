@@ -15,7 +15,7 @@ function Nav() {
       <div className="navbar">
         <div className="name">
           <a href="#mainsection">
-            <h1 className="Btn" onClick={toggle}>
+            <h1 className="Btn">
               SUNILKUMAR MINUKU
             </h1>
           </a>
