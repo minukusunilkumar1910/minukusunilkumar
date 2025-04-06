@@ -1,0 +1,260 @@
+
+   /* desktop contactpage*/
+   #contactsection
+   {
+      height: 50vh;
+      width: 100%;
+   }
+   .contactmainpage
+   {
+      height: 50vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+   }
+   .contactpage
+   {
+      /* background-color: black; */
+      height: 50vh;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 1rem;
+      /* flex-wrap: wrap; */
+      width: 100%;
+   }
+   .contactme
+   {
+      width: 25rem;
+      height: 8rem;
+      background-color: rgb(19, 239, 239);
+      display: flex;
+      justify-content: space-between;
+   }
+   .contactmail
+   {  
+   /* background-color: aqua; */
+   margin-top: 2rem;
+   width: 100%;
+   height: 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .touchdiv
+   {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* background-color: rgb(4, 22, 183); */
+      font-size: 1.6rem;
+   
+   }
+   .mymail
+   {
+      /* background-color: tomato; */
+      padding:0 1.5rem;
+      width: 20rem;
+      text-align: center;
+         
+   }
+   .mymail a
+   {  
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: rgb(23, 66, 166);
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+   .mymail a:hover
+   {
+      text-decoration: 1px rgb(31, 91, 243) underline;
+      opacity: 0.9;
+   }
+   
+   
+   
+   .carding {
+      box-sizing: border-box;
+      
+      background: rgba(223, 237, 243, 0.58);
+      border: 1px solid white;
+      box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+      -webkit-backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+      border-radius: 17px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.5s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-user-select: none;
+      -webkit-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+      font-weight: bolder;
+      color: black;
+    }
+    
+    .carding:hover {
+      border: 1px solid black;
+      transform: scale(1.05);
+    }
+    
+    .carding:active {
+      transform: scale(0.95) rotateZ(1.7deg);
+    }
+   
+   
+    .githubimg
+    {
+      width: 3.4rem;
+    }
+
+    /* mobile contact me page */
+
+@media (max-width:1070px)
+{
+
+#contactsection
+{
+   height: 50vh;
+   width: 100%;
+   /* background-color: #0bd7f7; */
+}
+.contactmainpage
+{
+   height: 50vh;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+.contactpage
+{
+   /* background-color: rgb(158, 160, 186); */
+   /* background-color: black; */
+   height: 50vh;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 1rem;
+   /* flex-wrap: wrap; */
+   width: 100%;
+}
+.githubimg
+{
+  width: 2.5rem;
+}
+.contactmail
+{
+  padding:2.5rem;
+   height: 10rem;
+   /* background-color: #8d97e2; */
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+.carding {
+   width: 12rem;
+   height: 5rem;
+   box-sizing: border-box; 
+   background: rgba(223, 237, 243, 0.58);
+   border: 1px solid white;
+   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+   backdrop-filter: blur(6px);
+   border-radius: 17px;
+   text-align: center;
+   cursor: pointer;
+   transition: all 0.5s;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   user-select: none;
+   font-weight: bolder;
+   color: black;
+   margin: 0 5px;
+ }
+ 
+ .carding:hover {
+   border: 1px solid black;
+   transform: scale(1.05);
+ }
+ 
+ .carding:active {
+   transform: scale(0.95) rotateZ(1.7deg);
+ }
+ .mymail
+ {
+    /* background-color: tomato; */
+    padding:0 1.5rem;
+    width: 20rem;
+    text-align: center;
+       
+ }
+ .mymail a
+ {  
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: rgb(23, 66, 166);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ .mymail a:hover
+ {
+    text-decoration: 1px rgb(31, 91, 243) underline;
+    opacity: 0.9;
+ }
+ .contactmail
+ {  
+ /* background-color: aqua; */
+ margin-top: 2rem;
+ width: 100%;
+ height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .touchdiv
+ {
+    /* background-color: rgb(4, 22, 183); */
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+ 
+ }
+}
+
+/* mobile height */
+@media (max-height:650px) 
+{
+   #contactsection
+{
+   height: 100vh;
+   width: 100%;
+   /* background-color: #0bd7f7; */
+}
+.contactpage{
+   height: 50vh;
+}
+.contactmainpage
+{
+   height: 80vh;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+}
