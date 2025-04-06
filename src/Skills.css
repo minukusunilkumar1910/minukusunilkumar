@@ -215,10 +215,9 @@
 
   .card-container {
     flex: 0 0 auto;
-    width: 90vw;
+    width: 100%;
     height: 55vh;
-    max-width: 340px;
-    background-color: #f9f9f9;
+    background-color: #dbe9d677;
     padding: 1.2rem;
     border-radius: 1rem;
     text-align: center;
