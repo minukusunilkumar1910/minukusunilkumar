@@ -1,5 +1,5 @@
 import "./About.css";
-import sky from "./assets/gitprofile2.png";
+import sky from "./assets/newimagesunil.jpg";
 function About() {
   
   let myname = "Sunilkumar Minuku"

@@ -1,14 +1,68 @@
 /* desktop projectspage*/
 @media (min-width:1071px)
 {
-   
-   #projectsection
-   {
+  #projectsection {
     min-height: 150vh;
-
-      /* background-color: #0a89a8; */
-      text-align: center;
-   }
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(145deg, #026583, #071d45, #0d5e72);
+    background-size: 400% 400%;
+    animation: gradientFlow 15s ease-in-out infinite;
+    box-shadow:
+      inset 0 0 80px rgba(255, 255, 255, 0.02),
+      inset 20px 0 100px rgba(135, 206, 250, 0.07),
+      inset -20px 0 100px rgba(255, 192, 203, 0.07),
+      inset 20px 0 300px rgba(135, 206, 250, 0.05),
+      inset -20px 0 300px rgba(255, 192, 203, 0.05),
+      0 0 80px rgba(255, 255, 255, 0.05),
+      -10px 0 100px rgba(135, 206, 250, 0.04),
+      10px 0 100px rgba(255, 192, 203, 0.04);
+  }
+  
+  @keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Star sparkle effect */
+  #projectsection::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: transparent url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><circle cx="10" cy="10" r="1" fill="white"/><circle cx="50" cy="40" r="1.2" fill="white"/><circle cx="70" cy="90" r="0.8" fill="white"/><circle cx="90" cy="20" r="1.1" fill="white"/><circle cx="30" cy="70" r="0.7" fill="white"/><circle cx="80" cy="10" r="0.9" fill="white"/></svg>') repeat;
+    background-size: 200px 200px;
+    animation: twinkle 70s linear infinite;
+    opacity: 0.27;
+    z-index: 1;
+  }
+  
+  @keyframes twinkle {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-50%, -50%); }
+  }
+  
+  
+  
+  @keyframes rainLines {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100%); }
+  }
+  
+  #projectsection::after,
+  #projectsection::before {
+    filter: drop-shadow(0 0 15px rgba(190, 226, 249, 0.2))
+            drop-shadow(0 0 25px rgba(135, 206, 250, 0.1));
+  }
+  
+  #projectsection > * {
+    position: relative;
+    z-index: 2;
+  }
+  /* --------------------------- */
    #projectsection h1
    {
          font-size: 2.5rem;

@@ -25,10 +25,10 @@
    }
 
    .myimg {
-      width: 24rem;
+      width: 26rem;
       height: 31rem;
       border-radius: 3.8rem;
-      box-shadow: rgba(238, 242, 247, 0.971) 0px 0px 30px 0px;
+      box-shadow: rgba(238, 242, 247, 0.971) 0px 0px 20px 0px;
       animation: glowShadow 2s ease-in-out infinite;
     }
     
