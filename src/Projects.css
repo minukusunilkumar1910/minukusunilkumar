@@ -161,9 +161,10 @@
 {
     #projectsection
     {
-      height: 130vh;
+      height: 270vh;
        /* background-color: #0a89a8; */
        text-align: center;
+       
     }
     #projectsection h1
     {
@@ -172,13 +173,14 @@
     }
     .projectspage
     {
+      /* background-color: #026583; */
        height: 90%;
        padding: 1rem;
-       
+       margin: 1rem;
        display: flex;
        flex-direction: column;
        align-items: center;
-       justify-content:space-around;
+       justify-content:space-between;
     }
  
     .main-content{
@@ -189,13 +191,14 @@
     }
      .cardpro .header
     {
-      background-color: #0a89a8;
+      /* background-color: #0a89a8; */
       height: 60%;
     }
     .projectsimg
     {
       width: 100%;
       height: 100%;
+      border-radius: 1.2rem;
     }
     
  
@@ -261,7 +264,7 @@
 {
    #projectsection
     {
-      height: 150vh;
+      height: 250vh;
      
     }
     .projectspage
@@ -272,6 +275,7 @@
        display: flex;
        flex-direction: row;
        align-items: center;
+       flex-wrap: wrap;
        justify-content:space-around;
     }
 
