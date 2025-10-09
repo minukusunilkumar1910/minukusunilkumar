@@ -18,6 +18,7 @@ function Hero() {
     <span className="actual-text">&nbsp;Hi There , I'm Sunilkumar&nbsp;</span>
     <span aria-hidden="true" className="hover-text">&nbsp;Hi There , I'm Sunilkumar&nbsp;</span>
     </div>
+
     
         <h1 className="mynameshow pop">Hi There , I'm Sunilkumar</h1>
 
