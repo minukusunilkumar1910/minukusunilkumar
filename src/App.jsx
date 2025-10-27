@@ -7,7 +7,6 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Loader from "./Loader";
 
-
 function App() {
   const [loading, setLoading] = useState(true);
 
