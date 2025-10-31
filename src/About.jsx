@@ -10,6 +10,7 @@ function About() {
     marginTop: "6rem",
     borderRadius: "2rem",
   };
+
   let styles = {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
