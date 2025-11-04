@@ -22,6 +22,7 @@ function Contact() {
       );
    }
 
+
    return (
       <section id="contactsection">
          <div className="contactmainpage">
